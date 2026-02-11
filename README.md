@@ -11,11 +11,36 @@
   - 質問詳細ページの実装
   - CSS全体の設計・実装
 
-## 使用技術
-- **フロントエンド**: HTML, CSS, JavaScript
-- **バックエンド**: PHP（フレームワークを使わないフルスクラッチ開発）
-- **データベース**: MySQL
+## 技術スタック
+
+### フロントエンド
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+
+- **HTML5**: セマンティックなマークアップ
+- **CSS3**: レスポンシブデザイン、フレックスボックス
+- **JavaScript**: DOM操作、フォームバリデーション
+
+### バックエンド
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
+
+- **PHP**: フレームワークを使わないフルスクラッチ開発
+  - セッション管理
+  - PDOによるデータベース操作
+  - セキュリティ対策（SQLインジェクション、XSS対策）
+
+### データベース
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+
+- **MySQL**: リレーショナルデータベース設計
+
+### 開発環境・ツール
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
+
 - **バージョン管理**: Git/GitHub
+- **開発サーバー**: XAMPP/MAMP
 
 ## 学習課題
 このプロジェクトでは、**PHPフレームワークを使用せず、フルスクラッチで実装**することで、以下を学習しました：
