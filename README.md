@@ -1,0 +1,130 @@
+# Q&A システム（質問・回答プラットフォーム）
+
+## プロジェクト概要
+チーム開発で制作した質問・回答システムです。ユーザーが質問を投稿し、他のユーザーが回答できるプラットフォームを提供します。
+
+## 開発体制
+- **開発人数**: 5名
+- **担当役割**: サブリーダー
+  - チームメンバーのサポート
+  - 質問詳細ページの実装
+  - CSS全体の設計・実装
+
+## 技術スタック
+
+### フロントエンド
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+
+- **HTML5**: セマンティックなマークアップ
+- **CSS3**: レスポンシブデザイン、フレックスボックス
+- **JavaScript**: DOM操作、フォームバリデーション
+
+### バックエンド
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
+
+- **PHP**: フレームワークを使わないフルスクラッチ開発
+  - セッション管理
+  - PDOによるデータベース操作
+  - セキュリティ対策（SQLインジェクション、XSS対策）
+
+### データベース
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+
+- **MySQL**: リレーショナルデータベース設計
+
+### 開発環境・ツール
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
+
+- **バージョン管理**: Git/GitHub
+- **開発サーバー**: XAMPP/MAMP
+
+## 学習課題
+このプロジェクトでは、**PHPフレームワークを使用せず、フルスクラッチで実装**することで、以下を学習しました：
+- PHPの基礎文法とセッション管理
+- データベース接続とSQL操作（PDO）
+- セキュリティ対策（SQLインジェクション、XSS対策）
+- MVCパターンを意識したファイル構成
+- チーム開発におけるコード規約の重要性
+
+## 主な機能
+
+### 基本機能
+- ユーザー登録・ログイン機能
+- 質問投稿機能
+- 回答投稿機能
+- 質問詳細表示
+- 質問一覧表示
+
+### 追加実装機能（15機能）
+1. 新規登録注意事項切り替え表示機能
+2. パスワード変更機能
+3. パスワードの文字制限数変更
+4. 長い文章の短縮表示機能
+5. 質問検索機能
+6. 質問者検索機能
+7. 文字入力制限機能
+8. 入力フォーム注意事項表示機能
+9. 入力フォーム文字数カウント機能
+10. 入力フォーム保持機能
+11. 複数単語検索機能
+12. ソート機能
+13. 自他の質問抽出機能
+14. 各検索、ソート、抽出同時使用機能
+15. コメント返信機能
+
+## 担当箇所
+
+### 質問詳細ページ（detail.php）
+- 質問の詳細情報表示
+- 回答一覧の表示
+- ユーザーインターフェースの実装
+
+### CSS設計（style.css）
+- プロジェクト全体のスタイリング
+- レスポンシブデザイン
+- ユーザビリティを考慮したUI/UX設計
+
+### サブリーダーとしての役割
+- チームメンバーのコーディングサポート
+- コードレビュー
+- 進捗管理のサポート
+
+## セットアップ方法
+
+1. リポジトリをクローン
+```bash
+git clone https://github.com/Inomooooto/pf-qa-system.git
+```
+
+2. データベースのセットアップ
+```bash
+# MySQLにログイン後、以下を実行
+mysql -u [username] -p < db/detabase/shema.sql
+mysql -u [username] -p < db/detabase/seed-date.sql
+```
+
+3. データベース接続設定
+`db/connect.php` の接続情報を環境に合わせて編集
+
+4. Webサーバーで起動
+- XAMPPやMAMPなどのローカルサーバーで実行
+- `index.php` にアクセス
+
+## 工夫した点
+
+### チーム開発のサポート
+- **開発手順のドキュメント化**: 事前に開発フローや命名規則、Git運用ルールをまとめたドキュメントを作成し、チーム全体で共有することで、開発の効率化と品質の統一を実現
+- **問題解決のサポート**: メンバーが技術的な課題に直面した際、一緒にデバッグや実装方法を検討し、チーム全体のスキル向上に貢献
+- **コードレビュー**: 可読性と保守性を重視したコードレビューを実施し、チーム開発における品質管理を徹底
+
+### 技術的な工夫
+- **CSS設計**: 再利用性と保守性を考慮したクラス設計により、統一感のあるデザインを実現
+
+
+## 今後の改善案
+- レスポンシブ対応の強化
+- APIの実装
+- セキュリティ対策の強化
